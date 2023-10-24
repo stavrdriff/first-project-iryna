@@ -1,0 +1,36 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/font-name.font-format") format("font-format");
+}
+@font-face {
+  font-weight: 500;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/font-name.font-format") format("font-format");
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.section {
+  padding: 120px 0;
+}
+.section:first-child {
+  padding-top: 80px;
+}
+.section__title {
+  font-size: 3rem;
+}/*# sourceMappingURL=styles.css.map */
