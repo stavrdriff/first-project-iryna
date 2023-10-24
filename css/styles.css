@@ -21,16 +21,16 @@ html {
 }
 
 body {
-  font-size: 16px;
+  font-size: inherit;
   font-style: normal;
 }
 
 .section {
   padding: 120px 0;
 }
-.section:first-child {
-  padding-top: 80px;
-}
-.section__title {
+.section-title {
   font-size: 3rem;
+}
+.section-caption {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=styles.css.map */
