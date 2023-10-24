@@ -43,6 +43,13 @@ body {
   font-family: var(--primary-font);
 }
 
+main > *:first-child {
+  margin-top: 0;
+}
+main > *:last-child {
+  margin-bottom: 0;
+}
+
 .section {
   margin: 80px 0;
 }
@@ -51,4 +58,7 @@ body {
 }
 .section-caption {
   font-size: 1.5rem;
+}
+.section--padding {
+  padding: 60px 0;
 }/*# sourceMappingURL=styles.css.map */
