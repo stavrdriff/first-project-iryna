@@ -1,15 +1,27 @@
+// Primary Fonts
+
 @font-face {
-  font-weight: 400;
-  font-family: "Gilroy";
+  font-weight: 300;
   font-style: normal;
+  font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/font-name.font-format") format("font-format");
+  src: url("../fonts/Poppins/Poppins-Light.woff2") format("woff2");
 }
+
+// Secondary Fonts
 
 @font-face {
   font-weight: 500;
-  font-family: "Gilroy";
+  font-family: "Cormorant";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/font-name.font-format") format("font-format");
+  src: url("../fonts/Cormorant/Cormorant-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Bold.woff2") format("woff2");
 }

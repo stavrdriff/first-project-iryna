@@ -1,17 +1,33 @@
 @font-face {
-  font-weight: 400;
-  font-family: "Gilroy";
+  font-weight: 300;
   font-style: normal;
+  font-family: "Poppins";
   font-display: swap;
-  src: url("../fonts/font-name.font-format") format("font-format");
+  src: url("../fonts/Poppins/Poppins-Light.woff2") format("woff2");
 }
 @font-face {
   font-weight: 500;
-  font-family: "Gilroy";
+  font-family: "Cormorant";
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/font-name.font-format") format("font-format");
+  src: url("../fonts/Cormorant/Cormorant-Medium.woff2") format("woff2");
 }
+@font-face {
+  font-weight: 700;
+  font-family: "Cormorant";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Cormorant/Cormorant-Bold.woff2") format("woff2");
+}
+:root {
+  --primary-color: #FF8126;
+  --primary-text-color: #1f1f1f;
+  --secondary-text-color: #fff;
+  --footer-links-color: #3D3D3D;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Cormorant", serif;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,10 +39,12 @@ html {
 body {
   font-size: inherit;
   font-style: normal;
+  font-weight: 400;
+  font-family: var(--primary-font);
 }
 
 .section {
-  padding: 120px 0;
+  margin: 80px 0;
 }
 .section-title {
   font-size: 3rem;
