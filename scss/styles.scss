@@ -1,0 +1,26 @@
+@import './typography';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-style: normal;
+}
+
+.section {
+  padding: 120px 0;
+
+  &:first-child {
+    padding-top: 80px;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+}
