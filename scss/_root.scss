@@ -7,4 +7,13 @@
   // fonts
   --primary-font: 'Poppins', sans-serif;
   --secondary-font: 'Cormorant', serif;
+
+  //paddings
+  --primary-container-padding: 1rem;
+}
+
+.container {
+  padding: 0 var(--primary-container-padding);
+  margin: 0 auto;
+  max-width: calc(1280px + var(--primary-container-padding) * 2);
 }

@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body>
-    <section class="section">
-        <h2 class="section-title">Default title</h2>
-        <p class="section-caption">Default caption</p>
-    </section>
-    
+<body class="page">
+    <header class="page-header"></header>
+    <main class="page-main">
+        <section class="hero">
+            <picture class="hero-picture">
+                <source srcset="./images/hero-decor.webp" type="image/webp">
+                <source srcset="./images/hero-decor.jpg" type="image/jpg">
+                <img src="./images/hero-decor.webp" alt="DEFAULT-ALT" class="hero-image">
+            </picture>
+            <div class="hero-gradient"></div>
+            <div class="hero-content">    
+                <div class="hero-heading">
+                    <h1 class="hero-title">Support Your Local Artisans</h1>
+                    <p class="hero-teaser">Discover brands and theit stories</p>
+                </div>
+                <div class="hero-actions">
+                    <button class="button" type="button">Browse bands</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer"></footer>
 </body>
 </html>

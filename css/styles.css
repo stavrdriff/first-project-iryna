@@ -5,7 +5,6 @@
   font-display: swap;
   src: url("../fonts/Poppins/Poppins-Light.woff2") format("woff2");
 }
-
 @font-face {
   font-weight: 400;
   font-style: normal;
@@ -13,7 +12,6 @@
   font-display: swap;
   src: url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2");
 }
-
 @font-face {
   font-weight: 500;
   font-style: normal;
@@ -21,7 +19,13 @@
   font-display: swap;
   src: url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2");
 }
-
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
+}
 @font-face {
   font-weight: 500;
   font-family: "Cormorant";
@@ -43,6 +47,24 @@
   --footer-links-color: #3D3D3D;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Cormorant", serif;
+  --primary-container-padding: 1rem;
+}
+
+.container, .hero-content, .hero-picture, .hero-gradient {
+  padding: 0 var(--primary-container-padding);
+  margin: 0 auto;
+  max-width: calc(1280px + var(--primary-container-padding) * 2);
+}
+
+.button {
+  padding: 0.5rem 2rem;
+  background: var(--primary-color);
+  border-radius: 0.25rem;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
 }
 
 * {
@@ -58,24 +80,90 @@ body {
   font-style: normal;
   font-weight: 400;
   font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: #fff;
 }
 
-main > *:first-child {
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.page-main {
+  flex-grow: 1;
+}
+.page-main > *:first-child {
   margin-top: 0;
 }
-main > *:last-child {
+.page-main > *:last-child {
   margin-bottom: 0;
 }
+.page-footer {
+  margin: auto 0 0;
+}
 
-.section {
-  margin: 80px 0;
+.hero {
+  position: relative;
+  padding: 125px 195px;
 }
-.section-title {
-  font-size: 3rem;
+.hero-picture, .hero-gradient {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -2;
+  transform: translateX(-50%);
+  display: block;
+  width: 100%;
+  height: 100%;
 }
-.section-caption {
-  font-size: 1.5rem;
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
-.section--padding {
-  padding: 60px 0;
+.hero-gradient {
+  z-index: -1;
+  background: linear-gradient(90deg, lightgray 40%, transparent 66%);
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.hero-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 3.125rem;
+  line-height: normal;
+}
+.hero-teaser {
+  font-size: 1.625rem;
+  font-weight: 300;
+  margin: 0;
 }/*# sourceMappingURL=styles.css.map */

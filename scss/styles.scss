@@ -1,5 +1,6 @@
 @import './typography';
 @import './root';
+@import './button';
 
 * {
   box-sizing: border-box;
@@ -14,30 +15,114 @@ body {
   font-style: normal;
   font-weight: 400;
   font-family: var(--primary-font);
+  color: var(--primary-text-color);
+  background-color: #fff;
 }
 
-main {
-  & > *:first-child {
-    margin-top: 0;
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &-header {}
+
+  &-main {
+    flex-grow: 1;
+    
+    & > *:first-child {
+      margin-top: 0;
+    }
+  
+    & > *:last-child {
+      margin-bottom: 0;
+    }
   }
 
-  & > *:last-child {
-    margin-bottom: 0;
+  &-footer {
+    margin: auto 0 0;
   }
 }
 
-.section {
-  margin: 80px 0;
+.hero {
+  position: relative;
+  padding: 125px 195px;
+  
+  
+ 
+  &-picture {
+    @extend .container;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -2;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  &-gradient {
+    @extend .hero-picture;
+
+    z-index: -1;
+    background: linear-gradient(90deg ,lightgray 40%, transparent 66%);
+  }
+
+  &-content {
+    @extend .container;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  &-heading {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
 
   &-title {
-    font-size: 3rem;
+    font-family: var(--secondary-font);
+    font-size: 3.125rem;
+    line-height: normal;
   }
 
-  &-caption {
-    font-size: 1.5rem;
+  &-teaser {
+    font-size: 1.625rem;
+    font-weight: 300;
+    margin: 0;
   }
 
-  &--padding {
-    padding: 60px 0;
-  }
+
 }

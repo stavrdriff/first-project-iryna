@@ -8,6 +8,31 @@
   src: url("../fonts/Poppins/Poppins-Light.woff2") format("woff2");
 }
 
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins/Poppins-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins/Poppins-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: "Poppins";
+  font-display: swap;
+  src: url("../fonts/Poppins/Poppins-SemiBold.woff2") format("woff2");
+}
+
+
 // Secondary Fonts
 
 @font-face {
