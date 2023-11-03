@@ -67,11 +67,9 @@ img {
 
 .hero {
   position: relative;
-  padding: 125px 195px;
+  padding: 125px 0;
   
   &-picture {
-    @extend .container;
-
     position: absolute;
     top: 0;
     left: 50%;

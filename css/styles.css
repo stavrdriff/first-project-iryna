@@ -50,10 +50,10 @@
   --primary-container-padding: 1rem;
 }
 
-.container, .hero-content, .hero-picture, .hero-gradient {
+.container, .hero-content {
   padding: 0 var(--primary-container-padding);
   margin: 0 auto;
-  max-width: calc(1280px + var(--primary-container-padding) * 2);
+  max-width: calc(1170px + var(--primary-container-padding) * 2);
 }
 
 .button {
@@ -125,7 +125,7 @@ img {
 
 .hero {
   position: relative;
-  padding: 125px 195px;
+  padding: 125px 0;
 }
 .hero-picture, .hero-gradient {
   position: absolute;
