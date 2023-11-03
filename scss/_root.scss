@@ -3,6 +3,9 @@
   --primary-text-color: #1f1f1f;
   --secondary-text-color: #fff;
   --footer-links-color: #3D3D3D;
+  --product-card-background: #F7F5F0;
+  --product-discount-color: #656565;
+  --quality-card-border-colors: #F7F5F0;
 
   // fonts
   --primary-font: 'Poppins', sans-serif;
@@ -10,6 +13,9 @@
 
   //paddings
   --primary-container-padding: 1rem;
+
+  //borders 
+  --cards-border-radius: 1.25rem;
 }
 
 .container {
@@ -17,3 +23,4 @@
   margin: 0 auto;
   max-width: calc(1170px + var(--primary-container-padding) * 2);
 }
+

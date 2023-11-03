@@ -45,9 +45,13 @@
   --primary-text-color: #1f1f1f;
   --secondary-text-color: #fff;
   --footer-links-color: #3D3D3D;
+  --product-card-background: #F7F5F0;
+  --product-discount-color: #656565;
+  --quality-card-border-colors: #F7F5F0;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Cormorant", serif;
   --primary-container-padding: 1rem;
+  --cards-border-radius: 1.25rem;
 }
 
 .container, .hero-content {
@@ -65,6 +69,67 @@
   font-weight: 500;
   border: none;
   cursor: pointer;
+}
+.button-filled {
+  width: 100%;
+}
+
+.product {
+  border-radius: var(--cards-border-radius);
+  background: var(--product-card-background);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+.product-media {
+  aspect-ratio: 270/160;
+}
+.product-wrapper {
+  padding: 1.25rem 1.25rem 2rem;
+  display: grid;
+  gap: 1.25rem;
+  text-align: center;
+}
+.product-caption {
+  display: grid;
+  gap: 0.5rem;
+}
+.product-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+.product-price {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.product-discount {
+  color: var(--product-discount-color);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-decoration-line: line-through;
+  margin-left: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+.grid--columns-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--columns-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--columns-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.quality-card {
+  padding: 1rem;
+  display: grid;
+  gap: 1.25rem;
+  border: 1px solid var(--quality-card-border-colors);
+  border-radius: var(--cards-border-radius);
 }
 
 * {
@@ -84,7 +149,7 @@ body {
   background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -102,6 +167,18 @@ img {
   display: block;
   max-width: 100%;
   max-height: 100%;
+}
+
+.picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.picture-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .page {

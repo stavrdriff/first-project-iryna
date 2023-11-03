@@ -1,0 +1,7 @@
+.quality-card {
+    padding: 1rem;
+    display: grid;
+    gap: 1.25rem;
+    border: 1px solid var(--quality-card-border-colors);
+    border-radius: var(--cards-border-radius);
+}
