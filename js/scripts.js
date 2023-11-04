@@ -3,32 +3,32 @@
 function initQualityArr() {
   const list = document.querySelector('[data-repeat^="quality-list"]');
   const qualityArr = [
-  {
-    icon: 'telescope',
-    title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
-    text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
-  },
-  {
-    icon: 'telescope',
-    title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
-    text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
-  },
-  {
-    icon: 'telescope',
-    title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
-    text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
-  },
-  {
-    icon: 'telescope',
-    title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
-    text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
-  },
-  {
-    icon: 'telescope',
-    title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
-    text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
-  }
-];
+    {
+      icon: 'telescope',
+      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
+    },
+    {
+      icon: 'telescope',
+      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
+    },
+    {
+      icon: 'telescope',
+      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
+    },
+    {
+      icon: 'telescope',
+      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
+    },
+    {
+      icon: 'telescope',
+      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
+    }
+  ];
 
   if (!qualityArr || !list) { 
     return;
