@@ -1,7 +1,7 @@
 "use strict";
 
 function initQualityArr() {
-  const list = document.querySelector('[data-repeat^="quality-list"]');
+  const list = document.querySelector('[data-repeat="quality-list"]');
   const qualityArr = [
     {
       icon: 'telescope',
