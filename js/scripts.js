@@ -5,27 +5,27 @@ function initQualityArr() {
   const qualityArr = [
     {
       icon: 'telescope',
-      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      title: '1 Ищи єтот єлемент в файле ./js/scrpits.js',
       text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
     },
     {
       icon: 'telescope',
-      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      title: '2 Ищи єтот єлемент в файле ./js/scrpits.js',
       text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
     },
     {
       icon: 'telescope',
-      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      title: '3 Ищи єтот єлемент в файле ./js/scrpits.js',
       text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
     },
     {
       icon: 'telescope',
-      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      title: '4 Ищи єтот єлемент в файле ./js/scrpits.js',
       text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
     },
     {
       icon: 'telescope',
-      title: 'Ищи єтот єлемент в файле ./js/scrpits.js',
+      title: '5 Ищи єтот єлемент в файле ./js/scrpits.js',
       text: 'Discover new tastes, flavours, snacks and recipes to make wonderful meals. Also find out where your food comes from and who makes it.',
     }
   ];
@@ -49,7 +49,7 @@ function initQualityArr() {
         </div>
       </div>
     </li>`
-    list.insertAdjacentHTML('afterbegin', card);
+    list.insertAdjacentHTML('beforeend', card);
   });
 }
 
